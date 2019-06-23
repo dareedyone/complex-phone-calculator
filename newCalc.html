@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="newCalc.css">
+    <script src="newCalc.js"></script>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="body">
+        <div class="speaker"></div>
+        <div class="inner">
+        <input disabled type="text" id="dp">
+        <input disabled type="text" id="pdp" >
+
+        <table id="first">
+            <tr>
+                <td><button  onclick="onF('n')">On</button></td>
+                <td><button  onclick="onF('f')">Off</button></td>
+                <td><button  onclick="">Lock</button></td>
+                <td><button onclick="backS()"><--</button></td>
+            </tr>
+
+            <tr>
+                    <td><button  onclick="getNo(7)">7</button></td>
+                    <td><button  onclick="getNo(8)">8</button></td>
+                    <td><button  onclick="getNo(9)">9</button></td>
+                    <td><button onclick="arith('/')">/</button></td>
+                </tr>
+
+                <tr>
+                        <td><button  onclick="getNo(4)">4</button></td>
+                        <td><button  onclick="getNo(5)">5</button></td>
+                        <td><button  onclick="getNo(6)">6</button></td>
+                        <td><button onclick="arith('*')">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button  onclick="getNo(1)">1</button></td>
+                        <td><button  onclick="getNo(2)">2</button></td>
+                        <td><button  onclick="getNo(3)">3</button></td>
+                        <td><button onclick="arith('-')">-</button></td>
+                    </tr>
+
+                    
+                    <tr>
+                            <td><button  onclick="getDec('.')">.</button></td>
+                            <td><button  onclick="getNo(0)">0</button></td>
+                            <td><button onclick="equals()">=</button></td>
+                            <td><button onclick="arith('+')">+</button></td>
+                          
+                        </tr>
+
+                       
+        </table>
+
+
+        
+
+      
+        <table  id="second">
+
+            <tr>
+                    <td>
+                            <i id="mov" onclick="moveyy()" class="fa fa-arrows-h"></i></td>
+
+            </tr>
+                
+            <tr>
+                <td><button></button></td>
+                <td><button class="smt" id="num" onclick="getNo(7)">INV</button></td>
+                <td><button  class="smt">DEG</button class="smt"></td>
+                <td><button class="smt">%</button></td>
+            </tr>
+
+            <tr>
+                    <td class="bgn"><button class="smt"></button></td>
+                    <td><button class="smt">sin</button></td>
+                    <td><button class="smt">cos</button></td>
+                    <td><button class="smt">tan</button></td>
+                    
+                </tr>
+
+                <tr>
+                        <td><button class="smt"></button></td>
+                        <td><button class="smt">In</button></td>
+                        <td><button class="smt">log</button></td>
+                        <td><button class="smt">!</button></td>
+                        
+                    </tr>
+                    <tr>
+                            <td><button></button></td>
+                            <td><button class="smt">&pi;</button></td>
+                            <td><button class="smt">e</button></td>
+                            <td><button class="smt">^</button></td>
+                           
+                        </tr>
+
+                        <tr>
+                                <td><button></button></td>
+                                <td><button class="smt">(</button></td>
+                                <td><button class="smt">)</button></td>
+                                <td><button class="smt">&Sqrt;</button></td>
+                               
+                            </tr>
+        </table>
+
+
+
+        
+    </div>
+</div>
+
+
+   
+
+
+    
+</body>
+</html>
